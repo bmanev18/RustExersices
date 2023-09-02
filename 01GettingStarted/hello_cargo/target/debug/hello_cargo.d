@@ -1,0 +1,1 @@
+C:\Users\Bozhidar\ Manev\Documents\GitHub\RustExersices\01GettingStarted\hello_cargo\target\debug\hello_cargo.exe: C:\Users\Bozhidar\ Manev\Documents\GitHub\RustExersices\01GettingStarted\hello_cargo\src\main.rs

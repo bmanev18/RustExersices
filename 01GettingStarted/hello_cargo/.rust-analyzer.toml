@@ -1,0 +1,3 @@
+# Example .rust-analyzer.toml
+[workspace]
+members = ["hello_cargo"]
