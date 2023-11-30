@@ -24,4 +24,15 @@ fn main() {
             }
         },
     };
+
+    // Alternative way
+    let greeating_file = File::open("hello.txt").unwrap_or_else(|error| {
+        if error.kind() == ErrorKind::NotFound {
+            File::create("hello.txt").unwrap_or_else(|e| {
+                panic!("Problem creating the file: {:?}", e);
+            })
+        } else {
+            panic!("Problem opening the file: {:?}", error);
+        }
+    });
 }
