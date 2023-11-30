@@ -35,4 +35,8 @@ fn main() {
             panic!("Problem opening the file: {:?}", error);
         }
     });
+
+    // Using expect instead
+    let greeting_file =
+        File::open("hello.txt").expect("hello.txt should be included in this project");
 }
