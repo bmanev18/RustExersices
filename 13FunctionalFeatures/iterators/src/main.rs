@@ -4,6 +4,7 @@ fn main() {
     let v1_iter = v1.iter();
 
     let total: i32 = v1_iter.sum();
+    println!("Total: {total}");
 
     // Methods that Produce Other Iterator
     let v2_iter = vec![1, 2, 3].into_iter();
