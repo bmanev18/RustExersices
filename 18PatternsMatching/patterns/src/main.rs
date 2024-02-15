@@ -52,4 +52,11 @@ fn main() {
             println!("{} is at index {}", index, value);
         }
     }
+
+    // {let} Statement
+    {
+        // let PATTERN = EXPRESSION
+        let (x, y, z) = (1, 2, 3);
+        // the name is a pattern, which matches with the expression
+    }
 }
