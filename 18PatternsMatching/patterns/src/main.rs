@@ -59,4 +59,14 @@ fn main() {
         let (x, y, z) = (1, 2, 3);
         // the name is a pattern, which matches with the expression
     }
+
+    // Function Parameters
+    {
+        fn print_coordinates(&(x, y): &(i32, i32)) {
+            println!("Current location: ({}, {})", x, y);
+        }
+
+        let point = (3, 5);
+        print_coordinates(&point);
+    }
 }
