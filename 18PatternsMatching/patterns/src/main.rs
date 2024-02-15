@@ -43,4 +43,13 @@ fn main() {
             println!("{}", top)
         }
     }
+
+    // {for} loops
+    {
+        let v = vec!['a', 'b', 'c'];
+
+        for (index, value) in v.iter().enumerate() {
+            println!("{} is at index {}", index, value);
+        }
+    }
 }
