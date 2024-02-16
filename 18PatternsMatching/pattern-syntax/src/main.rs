@@ -20,5 +20,14 @@ fn main() {
     }
 
     println!("At the end: x = {:?}, y = {:?}", x, y);
-    // {y} in this case is the first {let y = 10}
+    //{y} in this case is the first {let y = 10}
+
+    // Multiple Patterns
+    let x = 1;
+
+    match x {
+        1 | 2 => println!("one or two"),
+        3 => println!("three"),
+        _ => println!("anything"),
+    }
 }
