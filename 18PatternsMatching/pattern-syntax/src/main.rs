@@ -118,4 +118,7 @@ fn main() {
             _ => (),
         }
     }
+
+    // 4. Destructuring Structs and Tuples
+    let ((feet, inches), Point{x, y}) = ((3, 10), Point{x:3, y:-10});
 }
