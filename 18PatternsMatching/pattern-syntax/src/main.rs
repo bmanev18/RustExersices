@@ -30,4 +30,14 @@ fn main() {
         3 => println!("three"),
         _ => println!("anything"),
     }
+
+    // Matching a range of values
+    let x = 5;
+
+    match x {
+        1..=5 => println!("one through five"),
+        _ => println!("something else"),
+    }
+    //usin {..} instead of multiple {|}
+    //only allowed with {char} and numeric values
 }
