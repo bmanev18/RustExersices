@@ -40,4 +40,30 @@ fn main() {
     }
     //usin {..} instead of multiple {|}
     //only allowed with {char} and numeric values
+
+    // Destructuring to Break Apart Values
+    // 1. Destructuring Structs
+    struct Point {
+        x: i32,
+        y: i32,
+    }
+
+    let p = Point { x: 0, y: 7 };
+
+    let Point { x: a, y: b } = p;
+    assert_eq!(0, a);
+    assert_eq!(7, b);
+    //{a = x} and {b = y}
+
+    //Since it's comanly used =>
+    let Point { x, y } = p;
+    assert_eq!(0, x);
+    assert_eq!(7, y);
+
+    //Matching
+    match p {
+        Point { x, y: 0 } => println!("On the x axis at {x}"),
+        Point { x: 0, y } => println!("On the y axis at {y}"),
+        Point { x, y } => println!("On neither axis"),
+    }
 }
